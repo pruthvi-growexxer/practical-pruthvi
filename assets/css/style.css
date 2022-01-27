@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4rem;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* utility css */
+
+a{
+    text-decoration: none;
+}
+
+.text-primary{
+    color: #67599C;
+}
+.text-dark{
+    color: #000000;
+}
+
+.text-light{
+    color: #79797c;
+}
+
+.bg-primary{
+    color: #67599C;
+}
+.bg-dark{
+    color: #000000;
+}
+
+.bg-light{
+    color: #79797c;
+}
+
+.py1{
+    padding: 1.5rem 0;
+}
+.py2{
+    padding: 2rem 0;
+}
+.py3{
+    padding: 3rem 0;
+}
+
+.px1{
+    padding: 0 1.5rem;
+}
+.px2{
+    padding: 0 2rem;
+}
+.px3{
+    padding: 0 3rem;
+}
+
+.p1{
+    padding: 1.5rem;
+}
+.p2{
+    padding: 2rem;
+}
+.p3{
+    padding: 3rem;
+}
+
+
+.my1{
+    padding: 1.5rem 0;
+}
+.my2{
+    padding: 2rem 0;
+}
+.my3{
+    padding: 3rem 0;
+}
+
+.mx1{
+    padding: 0 1.5rem;
+}
+.mx2{
+    padding: 0 2rem;
+}
+.mx3{
+    padding: 0 3rem;
+}
+
+.m1{
+    padding: 1.5rem;
+}
+.m2{
+    padding: 2rem;
+}
+.m3{
+    padding: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: #000000;
+    padding: 0.5rem 2rem;
+    border:none;
+    border-radius: 33px;
+}
+
+.btn:hover{
+    background: #1a1a1a;
+}
+
+.btn-dark{
+    background: #000;
+    color:#fff;
+}
+.btn-dark-outline{
+    background: #fff;
+    color:#000;
+    border: 1px solid #000000;
+}
+
+/* navbar section */
+
+#navbar{
+    background: #f7f6fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #000;
+    padding:0.75rem;
+    margin: 0 0.25rem;
+}
+
+/* search bar */
+.search-form {
+    color: #555;
+    display: flex;
+    padding: 15px;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+}
+
+.search-form i{
+    margin-right:5px;
+}
+
+.search-box{
+    border: none;
+    background: #f7f6fa;
+    border-radius: inherit;
+}
+
+.search-form input:focus{
+    outline: none;
+    border-color: #f7c08a;
+} 
+
+
+
+/* media queries for mobile */
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        padding: 1.5rem;
+    }
+
+    #navbar .logo img{
+        width: 60px;
+    }
+
+    .search-form{
+        border: none;
+        padding: 5px;
+    }
+
+    .search-form input{
+        display: none;
+    }
+
+    #navbar ul li a {    
+        color: #000;
+        padding: 0.75rem;
+        margin: 0 0.15rem;
+    }
+
+    #navbar ul li {    
+        font-size: 14px;
+    }
+}
